@@ -33,6 +33,24 @@ TEST(FindLastTests, occurrenceOnBoundary) {
 }*/
 
 
+
+TEST(FindFirstTests, noOccurrence) {
+    EXPECT_EQ(-1, findFirst({1, 2, 42, 42, 63}, 99));
+}
+
+TEST(FindFirstTests, doubleOccurrence) {
+    EXPECT_EQ(2, findFirst({1, 2, 42, 42, 63}, 42));
+}
+
+TEST(FindFirstTests, emptyVector) {
+    EXPECT_EQ(-1, findFirst({}, 3));
+}
+
+TEST(FindFirstTests, occurrenceOnBoundary) {
+    EXPECT_EQ(4, findFirst({1, 2, 42, 42, 63}, 63));
+}
+
+
 int main(int argc, char **argv) {
     ::testing::InitGoogleTest(&argc, argv);
     return RUN_ALL_TESTS();
