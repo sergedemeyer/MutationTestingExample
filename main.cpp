@@ -1,6 +1,6 @@
 #include <iostream>
 #include <vector>
-#include "findLast.cpp"
+#include "find.cpp"
 #include "concatenate.cpp"
 
 int main() {

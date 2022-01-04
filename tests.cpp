@@ -1,7 +1,7 @@
 #include <vector>
 #include <gtest/gtest.h>
 
-#include "findLast.cpp"
+#include "find.cpp"
 
 TEST(FindLastTests, noOccurrence) {
     EXPECT_EQ(-1, findLast({1, 2, 42, 42, 63}, 99));
