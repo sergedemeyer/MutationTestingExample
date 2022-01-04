@@ -10,13 +10,6 @@ int findLast(std::vector<int> x, int y) {
 }
 
 
-
-
-
-
-
-
-
 //Mutant 1 - replace i >= 0 by i < 0
 //All tests which return an actual value will fail
 //[  FAILED  ] FindLastTests.doubleOccurrence (0 ms)
@@ -30,7 +23,7 @@ int findLast(std::vector<int> x, int y) {
 //All tests with a non-empty vector will fail
 //[  FAILED  ] FindLastTests.doubleOccurrence (0 ms)
 //[  FAILED  ] FindLastTests.noOccurrence (1 ms)
-//Mutant 2 is subsumed by mutant 1 -- all tests that kill mutant 2 also kill mutant 1.
+//Mutant 3 is subsumed by mutant 1 -- all tests that kill mutant 3 also kill mutant 1.
 //Mutant 1 is harder to kill
 
 

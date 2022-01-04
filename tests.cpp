@@ -1,7 +1,7 @@
 #include <vector>
 #include <gtest/gtest.h>
 
-#include "find.cpp"
+#include "findLast.cpp"
 
 TEST(FindLastTests, noOccurrence) {
     EXPECT_EQ(-1, findLast({1, 2, 42, 42, 63}, 99));
@@ -19,22 +19,18 @@ TEST(FindLastTests, occurrenceOnBoundary) {
     EXPECT_EQ(0, findLast({1, 2, 42, 42, 63}, 1));
 }
 
-/*
-TEST(FindLastTests, wrongAssert) {
+/*TEST(FindLastTests, wrongAssert) {
     EXPECT_EQ(-1, findLast({1, 2, 42, 42, 63}, 1));
     // This reaches the fault, infects the program state and propagates but the assert statement is wrong
-}
-*/
+}*/
 
 
-/*
-TEST(FindLastTests, emptyVectorPostCondictions) {
+/*TEST(FindLastTests, emptyVectorPostConditions) {
     int res1, res2;
     EXPECT_EQ(-1, res1 = findLast({}, 3));
     EXPECT_EQ(-1, res2 = findLast({}, 3));
     //@ ensures res1 == res2;
-}
-*/
+}*/
 
 
 int main(int argc, char **argv) {

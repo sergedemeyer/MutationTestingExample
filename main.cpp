@@ -1,6 +1,7 @@
 #include <iostream>
 #include <vector>
-#include "find.cpp"
+#include "findLast.cpp"
+#include "concatenate.cpp"
 
 int main() {
     std::vector<int> v{1, 2, 42, 42, 63};
@@ -12,4 +13,6 @@ int main() {
     std::cout << findLast(v, 0) << " == -1 (not present)." << '\n';
     std::vector<int> v2{};
     std::cout << findLast(v2, 99) << " == -1 (empty vector)." << '\n';
+
+    std::cout << concatenate("Hello", " world");
 }

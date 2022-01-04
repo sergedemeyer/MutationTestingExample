@@ -6,7 +6,6 @@ set(CMAKE_CXX_STANDARD 14)
 
 # Set source files for RELEASE target
 set(RELEASE_SOURCE_FILES
-#        find.cpp
         main.cpp)
 
 add_executable(MutationTestingExampleMain ${RELEASE_SOURCE_FILES})
