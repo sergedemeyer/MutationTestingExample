@@ -1,4 +1,15 @@
 #include <vector>
+#include <string>
+
+int findLastOccurrence(std::string toSearch, char toFind) {
+    if (toSearch.size() == 0)
+        return -1;
+    for (int i = toSearch.size() - 1; i >= 0; i--)
+        if (toSearch[i] == toFind)
+            return i;
+    return -1;
+}
+
 
 int findLast(std::vector<int> x, int y) {
     if (x.size() == 0)

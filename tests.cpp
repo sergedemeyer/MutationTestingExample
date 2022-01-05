@@ -3,6 +3,24 @@
 
 #include "find.cpp"
 
+TEST(FindLastOccurrenceTests, noOccurrence) {
+    EXPECT_EQ(-1, findLastOccurrence("Hello World", '\n'));
+}
+
+TEST(FindLastOccurrenceTests, doubleOccurrence) {
+    EXPECT_EQ(7, findLastOccurrence("Hello World", 'o'));
+}
+
+TEST(FindLastOccurrenceTests, emptyString) {
+    EXPECT_EQ(-1, findLastOccurrence("", 'o'));
+}
+
+TEST(FindLastOccurrenceTests, occurrenceOnBoundary) {
+    EXPECT_EQ(0, findLastOccurrence("Hello Worls", 'H'));
+}
+
+
+
 TEST(FindLastTests, noOccurrence) {
     EXPECT_EQ(-1, findLast({1, 2, 42, 42, 63}, 99));
 }

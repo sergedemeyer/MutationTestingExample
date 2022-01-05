@@ -6,6 +6,7 @@
 int main() {
     std::vector<int> v{1, 2, 42, 42, 63};
     std::vector<int> empty{};
+    std::string helloWorld = "Hello World";
 
     std::cout << "FINDLAST" << '\n';
     std::cout << findLast(v, 99) << " == -1 (not present)." << '\n';
@@ -27,4 +28,10 @@ int main() {
 
 
     std::cout << concatenate("Hello", " world") << '\n';
+
+    std::cout << "FINDLASTOCCURRENCE" << '\n';
+    std::cout << findLastOccurrence(helloWorld, 'x') << " == -1 (x not present)." << '\n';
+    std::cout << findLastOccurrence(helloWorld, 'H') << " == 0 (H on first position)." << '\n';
+    std::cout << findLastOccurrence(helloWorld, 'o') << " == 7 (o is double occurrence)." << '\n';
+
 }
